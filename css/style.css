@@ -4,8 +4,43 @@
     box-sizing: border-box;
 }
 
+.p-15{
+    padding: 15px;
+}
+
+/* main */
+
+body{
+    height: 100vh;
+    background-color: antiquewhite;
+    text-align: center;
+    background-image: url(../img/trenitalia_hero_2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: white;
+}
+
+span{
+    color: red;
+}
 
 span::before {
     content: '\20AC';
-
 }
+
+.freccia{
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 500px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.freccia p{
+    font-size: 1.2rem ;
+}
+
+
+
+
