@@ -30,7 +30,7 @@ var age = parseInt(prompt('Quanti anni hai?', '18'));
 
 //pseido validazione
 
-if (isNaN(age) && (isNaN(distance)) || (distance < 1)) {
+if (isNaN(age) && (isNaN(distance)) || (distance < 1) || (age < 1)) {
     alert('Per favore inserire solo numeri e riprovare')
     document.getElementById('greeting').innerHTML = 'Per favore riprovare! Altrimenti non si parte!'
 } else {
