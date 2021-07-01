@@ -22,9 +22,21 @@ L'output del prezzo finale va stampato in forma umana (con massimo due decimali,
 var priceKm = 0.21;
 var distance = parseInt(prompt('Che distanza (km) percorrerai?', '10'));
 
+
 // age request
 
 var age = parseInt(prompt('Quanti anni hai?'));
+
+
+//pseido validazione
+
+if (isNaN(age) || (isNaN(distance)) ){
+    alert('Per favore inserire solo numeri')
+    //se potessi stop esecuzione
+} else {
+    alert('Dati inseriti correttamente')
+}
+
 
 // total price
 
