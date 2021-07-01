@@ -28,30 +28,39 @@ var age = parseInt(prompt('Quanti anni hai?'));
 
 // total price
 
-var totalPrice = distance * priceKm; 
-console.log( 'Initial cost: ', totalPrice);
+var initPrice = distance * priceKm; 
+console.log( 'Initial cost: ', initPrice);
 
 // discont system
 
 var discount;
+var price; 
+
 
 if (age < 18){
-    discount = totalPrice * (20 / 100);
-    totalPrice = totalPrice - discount; 
+    discount = initPrice * (20 / 100);
+    price = initPrice - discount; 
     console.log('Underage Discount: -20% ', discount);
-    console.log('Total Price: ', totalPrice);
+    console.log('Total Price: ', price);
 }
 else if ( age > 65){
-    discount = totalPrice * (40 / 100);
-    totalPrice = totalPrice - discount; 
+    discount = initPrice * (40 / 100);
+    price = initPrice - discount; 
     console.log('Senior Discount -40%', discount);
-    console.log('Total Price: ', totalPrice);
+    console.log('Total Price: ', price);
 
 } 
 else{
-    totalPrice = totalPrice;
+    price = initPrice;
+    discount = 0; 
     console.log('No Discount!');
-    console.log('Total Price: ', totalPrice);
+    console.log('Total Price: ', price);
 }
 
+
+//print price for journey
+
+document.getElementById('price').innerHTML = initPrice.toFixed(2); 
+document.getElementById('discount').innerHTML = discount.toFixed(2);
+document.getElementById('totalprice').innerHTML = price.toFixed(2); 
 
