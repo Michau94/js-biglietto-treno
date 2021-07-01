@@ -25,7 +25,7 @@ var distance = parseInt(prompt('Che distanza (km) percorrerai?', '10'));
 
 // age request
 
-var age = parseInt(prompt('Quanti anni hai?'));
+var age = parseInt(prompt('Quanti anni hai?', '18'));
 
 
 //pseido validazione

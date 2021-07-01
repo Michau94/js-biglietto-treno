@@ -58,12 +58,14 @@ span::before {
 }
 
 .freccia {
-    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left:50%; 
+    transform: translate(-50%, -50%);
     border-radius: 20px;
     width: 500px;
-    padding: 50px;
     background-color: rgba(0, 0, 0, .5);
-    margin-top: 200px;
+    padding: 30px;
 }
 
 .freccia p {
