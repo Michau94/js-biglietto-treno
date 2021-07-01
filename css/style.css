@@ -66,6 +66,7 @@ span::before {
     width: 500px;
     background-color: rgba(0, 0, 0, .5);
     padding: 30px;
+    box-shadow: 5px 6px 5px 3px red;
 }
 
 .freccia p {
