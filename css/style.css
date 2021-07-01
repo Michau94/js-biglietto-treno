@@ -1,27 +1,55 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.p-15{
+.p-15 {
     padding: 15px;
 }
 
 /* main */
 
-body{
+body {
     height: 100vh;
     background-color: antiquewhite;
     text-align: center;
     background-image: url(../img/trenitalia_hero_2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     color: white;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-span{
+#michau, .initialprice, .discount, .totalprice {
+    animation: 2s from ease backwards;
+}
+
+@keyframes from {
+    from {
+        transform: translateX(-150%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.initialprice{
+    animation-delay: 0.25s;
+}
+
+.discount{
+    animation-delay: .5s;
+}
+
+.totalprice{
+    animation-delay: 0.75s;
+}
+
+
+
+span {
     color: red;
 }
 
@@ -29,18 +57,15 @@ span::before {
     content: '\20AC';
 }
 
-.freccia{
+.freccia {
     margin: 0 auto;
     border-radius: 20px;
     width: 500px;
     padding: 50px;
     background-color: rgba(0, 0, 0, .5);
+    margin-top: 200px;
 }
 
-.freccia p{
-    font-size: 1.2rem ;
+.freccia p {
+    font-size: 1.2rem;
 }
-
-
-
-
