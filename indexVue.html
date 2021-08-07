@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrecciaMichau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="freccia" class="freccia">
+        <div>
+            <h1 class="p-15" id="michau">FrecciaMichau.Vue</h1>
+            <input @keyup.enter="calculatePrice" v-model="distance" type="text" placeholder="Type Distance here!">
+            <input @keyup.enter="calculatePrice" v-model="age" type="text" placeholder="Type What's your age">
+            <button @click="calculatePrice">Calculate</button>
+            <p class="p-15 initialprice">Prezzo iniziale: <span id="price">{{initPrice}}</span></>
+            <p class="p-15 discount">Sconto: <span id="discount">{{ discount }}</span></p>
+            <p class="p-15 totalprice">Totale: <span id="totalprice"> {{ price }}</span></p>
+        </div>
+
+        <h2 v-if="isNaN(distance) || isNaN(age)"> Per favore riprovare altrimenti non si parte!</h2>
+    </div>
+
+
+
+
+    <script src="./js/vue-train.js"></script>
+</body>
+
+</html>
